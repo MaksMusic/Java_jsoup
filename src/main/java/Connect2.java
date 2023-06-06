@@ -21,15 +21,15 @@ public class Connect2 {
                 System.out.println(element.text());
             }
 
-            //ссылки
+            //СЃСЃС‹Р»РєРё
             System.out.println();
             for (Element element : elements) {
                 System.out.println(element.attr("href"));
             }
 
 
-            //по классу
-            System.out.println("id");
+            //РїРѕ РєР»Р°СЃСЃСѓ
+            System.out.println("class");
             var elementsClass = doc.select(".unit_temperature_c");
             for (Element element : elementsClass) {
                 System.out.println(element.text());
@@ -41,7 +41,7 @@ public class Connect2 {
                 System.out.println(element.text());
             }
 
-            //или если в классе 1 element
+            //РёР»Рё РµСЃР»Рё РІ РєР»Р°СЃСЃРµ 1 element
             System.out.println(doc.selectFirst(".page-title").text());
 
         }
