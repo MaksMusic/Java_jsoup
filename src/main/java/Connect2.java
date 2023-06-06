@@ -21,6 +21,7 @@ public class Connect2 {
                 System.out.println(element.text());
             }
 
+            //ссылки
             System.out.println();
             for (Element element : elements) {
                 System.out.println(element.attr("href"));

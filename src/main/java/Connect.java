@@ -5,7 +5,6 @@ import java.io.IOException;
 
 public class Connect {
     public static void main(String[] args) {
-
         try {
            var doc =  Jsoup.connect("http://www.planet-online.ru/").get();
            var title = doc.selectFirst("title").text();
