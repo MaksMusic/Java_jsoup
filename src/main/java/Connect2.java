@@ -29,7 +29,7 @@ public class Connect2 {
 
 
             //по классу
-            System.out.println("id");
+            System.out.println("class");
             var elementsClass = doc.select(".unit_temperature_c");
             for (Element element : elementsClass) {
                 System.out.println(element.text());
