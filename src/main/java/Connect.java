@@ -9,27 +9,27 @@ public class Connect {
            var doc =  Jsoup.connect("http://www.planet-online.ru/").get();
            var title = doc.selectFirst("title").text();
 
-            //заголовки
+            //Р·Р°РіРѕР»РѕРІРєРё
            var elements = doc.select("h3");
             for (Element element : elements) {
                 System.out.println(element.text());
             }
 
             System.out.println();
-            //заголовки всех ссылок
+            //Р·Р°РіРѕР»РѕРІРєРё РІСЃРµС… СЃСЃС‹Р»РѕРє
             var elements2 = doc.select("a");
             for (Element element2 : elements2) {
                 System.out.println(element2.text());
             }
 
-            //сами ссылки
+            //СЃР°РјРё СЃСЃС‹Р»РєРё
             var elements3 = doc.select("a");
             for (Element element3 : elements3) {
                 System.out.println(element3.attr("href"));
             }
 
 
-            //получить текст по id
+            //РїРѕР»СѓС‡РёС‚СЊ С‚РµРєСЃС‚ РїРѕ id
             System.out.println();
             var elements4 = doc.select("#content");
             for (Element element : elements4) {
